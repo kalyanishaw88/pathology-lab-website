@@ -1,0 +1,1773 @@
+/* 
+==================
+=======Home CSS ===>>>>>>>>>>>
+==================
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.home-container {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.home-bg {
+    width: 110%;
+    height: 500px;
+    background-image: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+    transform: rotate(2deg);
+    position: relative;
+    left: -25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-text {
+    width: 45%;
+    height: 100%;
+    transform: rotate(-2deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.about-text>h1 {
+    font-family: "DM Serif Text", serif;
+    letter-spacing: 5px;
+    font-size: 35px;
+    color: rgb(1, 95, 61);
+    text-align: left;
+}
+
+
+.about-text>p:nth-child(2) {
+    font-size: 18px;
+    color: rgb(1, 95, 61);
+}
+
+.about-text>p:nth-child(4) {
+    font-size: 12px;
+    color: rgb(1, 95, 61);
+}
+
+.link-style-for-booking {
+    text-decoration: none;
+    height: 50px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 25px;
+    color: rgb(1, 95, 61);
+    background-color: white;
+    border-radius: 30px;
+}
+
+.about-image {
+    width: 45%;
+    height: 100%;
+    transform: rotate(-2deg);
+
+}
+
+.about-image>img {
+    position: absolute;
+    height: 100%;
+    left: -50px;
+    bottom: -20px;
+    filter: drop-shadow(1px 1px 50px rgb(2, 90, 61));
+}
+
+.about-us {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 10px;
+}
+
+.about-us>p:nth-child(1) {
+    color: rgb(255, 120, 120);
+    font-weight: 600;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 12px;
+}
+
+.about-us>p:nth-child(2) {
+    font-family: "DM Serif Text", serif;
+    font-size: 30px;
+    color: rgba(1, 95, 61, 0.725);
+}
+
+.about-us>p:nth-child(3) {
+    font-family: "DM Serif Text", serif;
+    width: 50%;
+    text-align: center;
+    color: rgba(1, 95, 61, 0.59);
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.home-btns {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.home-btn>button {
+    padding: 7px 20px;
+    font-size: 18px;
+    color: rgb(1, 95, 61);
+    border-radius: 30px;
+    border: none;
+    border: 1px solid rgb(1, 95, 61);
+    background-color: transparent;
+    transition: background-color 0.8s, color 0.8s;
+    cursor: pointer;
+}
+
+.home-btn>button:hover {
+    background-color: rgb(1, 95, 61);
+    color: white;
+}
+
+.our-services {
+    width: 100%;
+    min-height: 500px;
+    margin-top: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-image: url('backroundImages/wave2.png');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our-services>h1 {
+    font-size: 35px;
+    color: rgb(1, 95, 61);
+    font-family: "DM Serif Text", serif;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    text-align: center;
+}
+
+.home-service-card {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 27px;
+}
+
+.service-card {
+    width: 270px;
+    height: 190px;
+    border: 1px solid rgb(1, 95, 61);
+    background-image: url('backroundImages/backbg.avif');
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.service-card:hover {
+    box-shadow: 0 0 10px rgb(1, 95, 61);
+    transform: scale(1.05);
+}
+
+.service-card>p {
+    color: rgb(1, 95, 61);
+    font-weight: 600px;
+    font-size: 20px;
+}
+
+.read-more {
+    display: flex;
+    justify-content: space-between;
+}
+
+.read-more>p {
+    color: rgb(1, 95, 61);
+    font-weight: 500px;
+    font-size: 18px;
+}
+
+.read-more>button {
+    border: none;
+    padding: 3px 10px;
+    color: rgb(255, 120, 120);
+    border: 1px solid rgb(255, 120, 120);
+    font-size: 13px;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+.read-more>button:hover {
+    background-color: rgb(255, 120, 120);
+    color: white;
+}
+
+.service-card>p:nth-child(1) {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(1, 95, 61, 0.745);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.service-card>p:nth-child(2) {
+    font-weight: 600;
+    color: rgb(2, 74, 47);
+}
+
+.service-card>p:nth-child(3) {
+    font-size: 16px;
+}
+
+.advice-banner {
+    width: 100%;
+    height: 650px;
+    background-image: linear-gradient(138deg, rgb(203, 255, 234), rgb(227, 255, 244), rgb(189, 255, 229));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.advice-banner>p:nth-child(1) {
+    color: rgb(255, 120, 120);
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.advice-banner>p:nth-child(3) {
+    color: rgb(1, 95, 61);
+    font-size: 23px;
+    width: 65%;
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+    margin-bottom: 20px;
+}
+
+.advice-banner>p:nth-child(5) {
+    color: rgb(1, 95, 61);
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.link-style-for-booking-down {
+    text-decoration: none;
+    height: 50px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 25px;
+    color: rgb(1, 95, 61);
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid rgb(1, 95, 61);
+}
+
+.advice-banner>img {
+    width: 45%;
+    height: 60%;
+}
+
+/* 
+ ==================
+ =======register CSS ===>>>>>>>>>>>
+ ==================
+  */
+
+.register-container {
+    width: 100%;
+    height: 91vh;
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+}
+
+.register-bg1 {
+    width: 50%;
+    height: 100%;
+    background-image: url('backroundImages/bgBanner.png');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.register-bg2 {
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgb(0, 142, 85), rgb(88, 136, 119), rgb(10, 116, 77), rgb(10, 113, 75), rgb(88, 136, 119), rgb(5, 82, 54));
+}
+
+.registration-form {
+    position: absolute;
+    width: 370px;
+    height: 450px;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: inset 0 0 25px rgb(1, 74, 47), inset 0 0 25px rgb(1, 95, 61);
+    /* background-color: rgb(214, 253, 239); */
+    background-image: url('backroundImages/wave2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    border: 1px solid rgb(1, 95, 61);
+    animation: regForm 0.7s ease forwards;
+}
+
+@keyframes regForm {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.registration-form>h2 {
+    color: rgb(1, 95, 61);
+    font-family: "DM Serif Text", serif;
+    letter-spacing: 3px;
+    font-size: 22px;
+
+}
+
+.registration-form>form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 15px;
+}
+
+.registration-form>form input {
+    padding: 8px 2px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(1, 95, 61, 0.526);
+    font-size: 17px;
+    color: rgb(1, 95, 61);
+    background-color: transparent;
+}
+
+.registration-form>form input:focus {
+    border-bottom-color: rgb(1, 95, 61);
+}
+
+.registration-form>form input::placeholder {
+    font-size: 18px;
+}
+
+.registration-form>form input[type="password"] {
+    font-size: 20px;
+    width: 100%;
+}
+
+.registration-form>form input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+}
+
+#password-block {
+    position: relative;
+}
+
+#password-block2 {
+    position: relative;
+}
+
+#eye {
+    position: absolute;
+    font-size: 20px;
+    top: 17px;
+    right: 7px;
+    color: rgb(1, 95, 61);
+}
+
+.fullName {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.fullName>input {
+    width: 50%;
+}
+
+.gender-select {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 50px;
+}
+
+.gender-select>label {
+    position: relative;
+    font-size: 17px;
+    top: 10px;
+    color: rgba(1, 95, 61, 0.671);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.gender-select>label>input {
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    cursor: pointer;
+}
+
+.registration-form>form>button {
+    align-self: flex-start;
+    padding: 5px 15px;
+    border: none;
+    border: 1px solid rgb(1, 95, 61);
+    color: rgb(1, 95, 61);
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.registration-form>form>button:hover {
+    background-color: rgb(1, 95, 61);
+    color: white;
+}
+
+.registration-form>p {
+    font-size: 12px;
+    color: rgb(255, 107, 107);
+}
+
+
+/* 
+ ==================
+ =======Login CSS ===>>>>>>>>>>>
+ ==================
+  */
+
+.login-container {
+    width: 100%;
+    height: 91vh;
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+}
+
+.login-bg1 {
+    width: 50%;
+    height: 100%;
+    background-image: url('backroundImages/bgBanner.png');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.login-bg2 {
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgb(0, 142, 85), rgb(88, 136, 119), rgb(10, 116, 77), rgb(10, 113, 75), rgb(88, 136, 119), rgb(5, 82, 54));
+}
+
+.login-form {
+    position: absolute;
+    width: 370px;
+    height: 320px;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: inset 0 0 25px rgb(1, 74, 47), inset 0 0 25px rgb(1, 95, 61);
+    /* background-color: rgb(214, 253, 239); */
+    background-image: url('backroundImages/wave2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    border: 1px solid rgb(1, 95, 61);
+    animation: regForm 0.7s ease forwards;
+}
+
+@keyframes regForm {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.login-form>h2 {
+    color: rgb(1, 95, 61);
+    font-family: "DM Serif Text", serif;
+    letter-spacing: 3px;
+    font-size: 22px;
+
+}
+
+.login-form>form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 18px;
+}
+
+.login-form>form input {
+    padding: 8px 2px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(1, 95, 61, 0.526);
+    font-size: 17px;
+    color: rgb(1, 95, 61);
+    background-color: transparent;
+}
+
+.login-form>form input:focus {
+    border-bottom-color: rgb(1, 95, 61);
+}
+
+.login-form>form input[type="password"] {
+    font-size: 20px;
+    width: 100%;
+}
+
+.login-form>form input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+}
+
+.fullName {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.fullName>input {
+    width: 50%;
+}
+
+.gender-select {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 50px;
+}
+
+.gender-select>label {
+    position: relative;
+    font-size: 17px;
+    top: 10px;
+    color: rgba(1, 95, 61, 0.671);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.gender-select>label>input {
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    cursor: pointer;
+}
+
+.login-form>form>button {
+    align-self: flex-start;
+    padding: 5px 15px;
+    border: none;
+    border: 1px solid rgb(1, 95, 61);
+    color: rgb(1, 95, 61);
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.login-form>form>button:hover {
+    background-color: rgb(1, 95, 61);
+    color: white;
+}
+
+.login-form>p {
+    font-size: 12px;
+    color: rgb(255, 107, 107);
+}
+
+/* 
+ ==================
+ =======Booking CSS ===>>>>>>>>>>>
+ ==================
+  */
+
+.booking-container {
+    margin-top: 60px;
+    height: 91vh;
+    width: 100%;
+    display: flex;
+
+}
+
+.booking-hero {
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgb(11, 190, 118), rgb(70, 180, 142), rgb(130, 202, 175));
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 0 25px;
+}
+
+.booking-hero>h1 {
+    color: rgb(1, 95, 61);
+    font-family: "DM Serif Text", serif;
+    letter-spacing: 3px;
+    font-size: 52px;
+    width: 70%;
+    margin-top: 45px;
+}
+
+.booking-hero>p {
+    font-size: 20px;
+    color: rgb(1, 95, 61);
+    width: 70%;
+}
+
+.link-style-for-service {
+    text-decoration: none;
+    height: 50px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 25px;
+    color: rgb(1, 95, 61);
+    background-color: white;
+    border-radius: 30px;
+    transition: all 0.7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.link-style-for-service:hover {
+    background-color: rgb(1, 95, 61);
+    color: white;
+}
+
+.booking-form-container {
+    width: 30%;
+    height: 100%;
+    background-image: url('backroundImages/bgBanner.png');
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form {
+    position: absolute;
+    width: 370px;
+    height: 78%;
+    background-color: white;
+    left: -180px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: inset 0 0 25px rgb(1, 74, 47), inset 0 0 25px rgb(1, 95, 61);
+    /* background-color: rgb(214, 253, 239); */
+    background-image: url('backroundImages/wave2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    border: 1px solid rgb(1, 95, 61);
+    animation: bookForm 0.7s ease forwards;
+}
+
+@keyframes bookForm {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.booking-form>h2 {
+    color: rgb(1, 95, 61);
+    font-family: "DM Serif Text", serif;
+    letter-spacing: 3px;
+    font-size: 22px;
+
+}
+
+.booking-form>form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 25px;
+}
+
+.booking-form>form input {
+    padding: 8px 2px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(1, 95, 61, 0.526);
+    font-size: 17px;
+    color: rgb(1, 95, 61);
+    background-color: transparent;
+}
+
+.booking-form>form input:focus {
+    border-bottom-color: rgb(1, 95, 61);
+}
+
+.booking-form>form select {
+    padding: 8px 2px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(1, 95, 61, 0.526);
+    font-size: 17px;
+    color: rgb(1, 95, 61);
+    background-color: transparent;
+}
+
+.booking-form>form select:focus {
+    border-bottom-color: rgb(1, 95, 61);
+}
+
+.fullName {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.fullName>input {
+    width: 50%;
+}
+
+.gender-select {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 50px;
+}
+
+.gender-select>label {
+    position: relative;
+    font-size: 17px;
+    top: 10px;
+    color: rgba(1, 95, 61, 0.671);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.gender-select>label>input {
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    cursor: pointer;
+}
+
+.booking-form>form>button {
+    align-self: flex-start;
+    padding: 5px 15px;
+    border: none;
+    border: 1px solid rgb(1, 95, 61);
+    color: rgb(1, 95, 61);
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.booking-form>form>button:hover {
+    background-color: rgb(1, 95, 61);
+    color: white;
+}
+
+.booking-form>p {
+    font-size: 12px;
+    color: rgb(255, 107, 107);
+}
+
+/* 
+ ==================
+ =======userDetail CSS ===>>>>>>>>>>>
+ ==================
+  */
+
+.userDetail-container {
+    margin-top: 60px;
+    height: 91vh;
+    width: 100%;
+    display: flex;
+
+}
+
+.userDetail-hero {
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgb(11, 190, 118), rgb(70, 180, 142), rgb(130, 202, 175));
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 25px;
+}
+
+.userDetail-hero>h1 {
+    color: rgb(1, 95, 61);
+    font-family: "DM Serif Text", serif;
+    letter-spacing: 3px;
+    font-size: 52px;
+    width: 70%;
+    margin-top: 45px;
+}
+
+.userDetail-hero>p {
+    font-size: 20px;
+    color: rgb(1, 95, 61);
+    width: 70%;
+}
+
+.link-style-for-service {
+    text-decoration: none;
+    height: 50px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 25px;
+    color: rgb(1, 95, 61);
+    background-color: white;
+    border-radius: 30px;
+    transition: all 0.7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.link-style-for-service:hover {
+    background-color: rgb(1, 95, 61);
+    color: white;
+}
+
+.userDetail-form-container {
+    width: 30%;
+    height: 100%;
+    background-image: url('backroundImages/bgBanner.png');
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userDetail-form {
+    position: absolute;
+    width: 370px;
+    height: 78%;
+    background-color: white;
+    left: -180px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: inset 0 0 25px rgb(1, 74, 47), inset 0 0 25px rgb(1, 95, 61);
+    /* background-color: rgb(214, 253, 239); */
+    background-image: url('backroundImages/wave2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    border: 1px solid rgb(1, 95, 61);
+    animation: bookForm 0.7s ease forwards;
+}
+
+.userDetail-form>h1 {
+    font-family: "DM Serif Text", serif;
+    color: rgba(255, 90, 84, 0.731);
+    text-align: center;
+}
+
+.userDetail-form>h2 {
+    font-family: "DM Serif Text", serif;
+    color: rgb(1, 116, 10);
+    text-align: center;
+}
+
+.userDetail-form>p {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 19px;
+    color: rgb(255, 0, 0);
+}
+
+@keyframes bookForm {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 
+ ==================
+ =======admin CSS ===>>>>>>>>>>>
+ ==================
+  */
+
+.admin-container {
+    width: 100%;
+    height: 91vh;
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+}
+
+.admin-bg1 {
+    width: 50%;
+    height: 100%;
+    background-image: url('backroundImages/bgBanner.png');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.admin-bg2 {
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgb(0, 142, 85), rgb(88, 136, 119), rgb(10, 116, 77), rgb(10, 113, 75), rgb(88, 136, 119), rgb(5, 82, 54));
+}
+
+.admin-form {
+    position: absolute;
+    width: 370px;
+    height: 320px;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: inset 0 0 25px rgb(1, 74, 47), inset 0 0 25px rgb(1, 95, 61);
+    /* background-color: rgb(214, 253, 239); */
+    background-image: url('backroundImages/wave2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    border: 1px solid rgb(1, 95, 61);
+    animation: regForm 0.7s ease forwards;
+}
+
+@keyframes regForm {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.admin-form>h2 {
+    color: rgb(1, 95, 61);
+    font-family: "DM Serif Text", serif;
+    letter-spacing: 3px;
+    font-size: 22px;
+
+}
+
+.admin-form>form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 40px;
+}
+
+.admin-form>form input {
+    padding: 8px 2px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(1, 95, 61, 0.526);
+    font-size: 17px;
+    color: rgb(1, 95, 61);
+    background-color: transparent;
+}
+
+.admin-form>form input:focus {
+    border-bottom-color: rgb(1, 95, 61);
+}
+
+.admin-form>form input[type="password"] {
+    font-size: 20px;
+    width: 100%;
+}
+
+.admin-form>form input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+}
+
+.admin-form>form>button {
+    align-self: center;
+    padding: 5px 20px;
+    border: none;
+    border: 1px solid rgb(1, 95, 61);
+    color: rgb(1, 95, 61);
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.admin-form>form>button:hover {
+    background-color: rgb(1, 95, 61);
+    color: white;
+}
+
+
+/* 
+ ==================
+ =======admin panel CSS ===>>>>>>>>>>>
+ ==================
+  */
+
+.admin-panel-container {
+    width: 100%;
+    height: 91.4vh;
+    margin-top: 60px;
+    background-image: url('backroundImages/bgBanner.png');
+    display: flex;
+    gap: 30px;
+    padding: 35px;
+}
+
+.admin-navbar {
+    flex: 1;
+    background-image: url('backroundImages/wave2.png');
+    background-size: cover;
+    background-color: white;
+    box-shadow: inset 0 0 25px rgb(1, 74, 47), inset 0 0 25px rgb(1, 95, 61);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.adminLink {
+    margin-top: 25px;
+    text-decoration: none;
+    color: rgb(0, 74, 49);
+    font-size: 20px;
+}
+
+.adminLink.active {
+    border-bottom: 1px solid rgb(0, 74, 49);
+}
+
+.admin-pages {
+    flex: 4;
+    background-image: url('backroundImages/wave2.png');
+    background-size: cover;
+    background-position: 40%;
+    background-color: white;
+    box-shadow: inset 0 0 25px rgb(1, 74, 47), inset 0 0 25px rgb(1, 95, 61);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* 
+ ==================
+ =======admin user CSS ===>>>>>>>>>>>
+ ==================
+  */
+
+.admin-user-container {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+.all-users {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    box-shadow: 0 0 5px rgb(0, 74, 49);
+    padding: 3px;
+    margin: 10px 0;
+}
+
+.all-users>p:nth-child(5) {
+    display: flex;
+    gap: 25px;
+}
+
+.all-users>p:nth-child(5)>span:nth-child(1) {
+    color: rgb(255, 0, 0);
+}
+
+.all-users>p:nth-child(5)>span:nth-child(2) {
+    color: rgb(0, 64, 255);
+}
+
+/* 
+ ==================
+ =======admin user CSS ===>>>>>>>>>>>
+ ==================
+  */
+
+.admin-booking-container {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+.all-users {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    box-shadow: 0 0 5px rgb(0, 74, 49);
+    padding: 3px;
+    margin: 10px 0;
+}
+
+.all-users>p:nth-child(5) {
+    display: flex;
+    gap: 25px;
+}
+
+.all-users>p:nth-child(5)>span:nth-child(1) {
+    color: rgb(255, 0, 0);
+}
+
+.all-users>p:nth-child(5)>span:nth-child(2) {
+    color: rgb(0, 64, 255);
+}
+
+
+/* 
+ ==================
+ =======Booking Confirm CSS ===>>>>>>>>>>>
+ ==================
+  */
+
+
+.booking-confirm-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-form {
+    width: 370px;
+    height: 78%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: inset 0 0 25px rgb(1, 74, 47), inset 0 0 25px rgb(1, 95, 61);
+    /* background-color: rgb(214, 253, 239); */
+    border-radius: 10px;
+    border: 1px solid rgb(1, 95, 61);
+    animation: bookForm 0.7s ease forwards;
+}
+
+@keyframes bookForm {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.confirm-form>h2 {
+    color: rgb(1, 95, 61);
+    font-family: "DM Serif Text", serif;
+    letter-spacing: 3px;
+    font-size: 22px;
+
+}
+
+.confirm-form>form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 25px;
+}
+
+.confirm-form>form input {
+    padding: 8px 2px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(1, 95, 61, 0.526);
+    font-size: 17px;
+    color: rgb(1, 95, 61);
+    background-color: transparent;
+}
+
+.confirm-form>form input:focus {
+    border-bottom-color: rgb(1, 95, 61);
+}
+
+.confirm-form>form select {
+    padding: 8px 2px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(1, 95, 61, 0.526);
+    font-size: 17px;
+    color: rgb(1, 95, 61);
+    background-color: transparent;
+}
+
+.confirm-form>form select:focus {
+    border-bottom-color: rgb(1, 95, 61);
+}
+
+.fullName {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.fullName>input {
+    width: 50%;
+}
+
+.gender-select {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 50px;
+}
+
+.gender-select>label {
+    position: relative;
+    font-size: 17px;
+    top: 10px;
+    color: rgba(1, 95, 61, 0.671);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.gender-select>label>input {
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    cursor: pointer;
+}
+
+.confirm-form>form>button {
+    align-self: flex-start;
+    padding: 5px 15px;
+    border: none;
+    border: 1px solid rgb(1, 95, 61);
+    color: rgb(1, 95, 61);
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.confirm-form>form>button:hover {
+    background-color: rgb(1, 95, 61);
+    color: white;
+}
+
+.confirm-form>p {
+    font-size: 12px;
+    color: rgb(255, 107, 107);
+}
+
+
+
+/* 
+ ==================
+ =======Service Confirm CSS ===>>>>>>>>>>>
+ ==================
+  */
+
+
+.service-confirm-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-form {
+    width: 370px;
+    height: 78%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: inset 0 0 25px rgb(1, 74, 47), inset 0 0 25px rgb(1, 95, 61);
+    /* background-color: rgb(214, 253, 239); */
+    border-radius: 10px;
+    border: 1px solid rgb(1, 95, 61);
+    animation: bookForm 0.7s ease forwards;
+}
+
+@keyframes bookForm {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.service-form>h2 {
+    color: rgb(1, 95, 61);
+    font-family: "DM Serif Text", serif;
+    letter-spacing: 3px;
+    font-size: 22px;
+
+}
+
+.service-form>form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+}
+
+.service-form>form input {
+    padding: 8px 2px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(1, 95, 61, 0.526);
+    font-size: 17px;
+    color: rgb(1, 95, 61);
+    background-color: transparent;
+}
+
+.service-form>form input:focus {
+    border-bottom-color: rgb(1, 95, 61);
+}
+
+.service-form>form select {
+    padding: 8px 2px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(1, 95, 61, 0.526);
+    font-size: 17px;
+    color: rgb(1, 95, 61);
+    background-color: transparent;
+}
+
+.service-form>form select:focus {
+    border-bottom-color: rgb(1, 95, 61);
+}
+
+.fullName {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.fullName>input {
+    width: 50%;
+}
+
+.gender-select {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 50px;
+}
+
+.gender-select>label {
+    position: relative;
+    font-size: 17px;
+    top: 10px;
+    color: rgba(1, 95, 61, 0.671);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.gender-select>label>input {
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    cursor: pointer;
+}
+
+.service-form>form>button {
+    align-self: flex-start;
+    padding: 5px 15px;
+    border: none;
+    border: 1px solid rgb(1, 95, 61);
+    color: rgb(1, 95, 61);
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.service-form>form>button:hover {
+    background-color: rgb(1, 95, 61);
+    color: white;
+}
+
+/* 
+ ==================
+ =======REPORT CSS ===>>>>>>>>>>>
+ ==================
+  */
+
+.report-confirm-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report-form {
+    width: 400px;
+    height: 87%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: inset 0 0 25px rgb(1, 74, 47), inset 0 0 25px rgb(1, 95, 61);
+    /* background-color: rgb(214, 253, 239); */
+    border-radius: 10px;
+    border: 1px solid rgb(1, 95, 61);
+    animation: bookForm 0.7s ease forwards;
+}
+
+@keyframes bookForm {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.report-form>h2 {
+    color: rgb(1, 95, 61);
+    font-family: "DM Serif Text", serif;
+    letter-spacing: 3px;
+    font-size: 22px;
+
+}
+
+.report-form>form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+}
+
+.report-form>form input {
+    padding: 8px 2px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(1, 95, 61, 0.526);
+    font-size: 17px;
+    color: rgb(1, 70, 44);
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.report-form>form input::placeholder {
+    font-weight: 400;
+    color: rgba(1, 70, 44, 0.581);
+}
+
+.report-form>form input:focus {
+    border-bottom-color: rgb(1, 95, 61);
+}
+
+.report-form>form select {
+    padding: 8px 2px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(1, 95, 61, 0.526);
+    font-size: 17px;
+    color: rgb(1, 95, 61);
+    background-color: transparent;
+}
+
+.report-form>form select:focus {
+    border-bottom-color: rgb(1, 95, 61);
+}
+
+.fullName {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.fullName>input {
+    width: 50%;
+}
+
+.gender-select {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 50px;
+}
+
+.gender-select>label {
+    position: relative;
+    font-size: 17px;
+    top: 10px;
+    color: rgba(1, 95, 61, 0.671);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.gender-select>label>input {
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    cursor: pointer;
+}
+
+.report-form>form>button {
+    align-self: flex-start;
+    padding: 5px 15px;
+    border: none;
+    border: 1px solid rgb(1, 95, 61);
+    color: rgb(1, 95, 61);
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.report-form>form>button:hover {
+    background-color: rgb(1, 95, 61);
+    color: white;
+}
+
+.report-container {
+    width: 100%;
+    height: 91vh;
+    margin-top: 60px;
+    background-image: linear-gradient(135deg, rgb(0, 142, 85), rgb(88, 136, 119), rgb(10, 116, 77), rgb(10, 113, 75), rgb(88, 136, 119), rgb(5, 82, 54));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report_page {
+    width: 40%;
+    height: 95%;
+    background-color: white;
+    padding: 10px;
+}
+
+.our_lab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.our_lab>h3 {
+    font-size: 15px;
+}
+
+.patent_details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.patent_details>p:nth-child(1) {
+    display: flex;
+    gap: 25px;
+}
+
+.testResults>table {
+    width: 100%;
+}
+
+.testResults>table>tr,
+.testResults>table>tr>th,
+.testResults>table>tr>td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.cost-price {
+    margin-top: 300px;
+}
+
+.cost-price>p {
+    display: flex;
+    justify-content: space-between;
+}
+
+#downLoadbtn {
+    margin-top: 30px;
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    border: 1px solid;
+    color: black;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+#downLoadbtn:hover {
+    background-color: black;
+    color: white;
+}
+
+@media print {
+
+    /* Hide everything by default */
+    body * {
+        visibility: hidden;
+    }
+
+    /* Make the report visible */
+    .report-container,
+    .report-container * {
+        visibility: visible;
+    }
+
+    /* Ensure the report page is properly aligned for printing */
+    .report-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    /* Hide unnecessary elements like the button and footer */
+    #downLoadbtn,
+    footer {
+        display: none;
+    }
+
+    /* Optional: Adjust fonts and layout for print */
+    .report_page {
+        font-size: 12pt;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    /* Optional: Remove the border for printing, or adjust margins */
+    .report-container {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.modal-overlay {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.833);
+    position: absolute;
+    top: 0;
+
+}
+
+.modal {
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    background-image: url('backroundImages/wave2.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.payment-images>img {
+    width: 500px;
+}
+
+.modelbtns {
+    display: flex;
+    gap: 35px;
+}
+
+
+.modelbtns>button {
+    padding: 5px 10px;
+    border: none;
+    border: 1px solid rgb(0, 95, 63);
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.modelbtns>button:hover {
+    background-color: rgb(0, 95, 63);
+    color: rgb(255, 255, 255);
+}

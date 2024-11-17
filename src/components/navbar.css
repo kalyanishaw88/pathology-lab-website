@@ -1,0 +1,118 @@
+.navbar-container {
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(135deg, rgb(122, 220, 181) 0%, rgb(0, 208, 132) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.home-nav-link {
+    text-decoration: none;
+    color: rgb(0, 109, 69);
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.link-style {
+    text-decoration: none;
+    color: rgb(0, 109, 69);
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+}
+
+.link-style.active {
+    border-bottom: 1px solid rgb(0, 109, 69);
+}
+
+#arrowDown {
+    position: absolute;
+    top: 23px;
+    color: rgb(0, 109, 69);
+    cursor: pointer;
+}
+
+.dropdown-item {
+    position: absolute;
+    top: 50px;
+    font-size: 16px;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    color: rgb(0, 45, 28);
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    border: 2px solid rgb(0, 109, 69);
+    align-items: center;
+    right: 15px;
+    background-color: rgba(164, 255, 222, 0.716);
+    transition: all 0.7s;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(0, 109, 69);
+    color: white;
+}
+
+.dropdown-item1 {
+    position: absolute;
+    top: 78px;
+    font-size: 16px;
+    text-decoration: none;
+    width: 120px;
+    height: 30px;
+    background-color: transparent;
+    color: rgb(0, 45, 28);
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    border: 2px solid rgb(0, 109, 69);
+    background-color: rgba(164, 255, 222, 0.716);        
+    align-items: center;
+    right: 15px;
+    transition: all 0.7s;
+}
+
+.dropdown-item1:hover {
+    background-color: rgb(0, 109, 69);
+    color: white;
+}
+
+.dropdown-item2 {
+    position: absolute;
+    top: 106px;
+    font-size: 16px;
+    text-decoration: none;
+    width: 120px;
+    height: 30px;
+    background-color: transparent;
+    color: rgb(0, 45, 28);
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    border: 2px solid rgb(0, 109, 69);
+    background-color: rgba(164, 255, 222, 0.716);        
+    align-items: center;
+    right: 15px;
+    transition: all 0.7s;
+}
+
+.dropdown-item2:hover {
+    background-color: rgb(0, 109, 69);
+    color: white;
+}

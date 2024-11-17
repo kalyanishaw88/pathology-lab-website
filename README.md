@@ -1,91 +1,70 @@
-# pathology-lab-website
+# Getting Started with Create React App
 
-Description of your project:-
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Table of Contents
-- [About](#about)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [License](#license)
-- [Contributing](#contributing)
-- [Contact](#contact)
+## Available Scripts
 
-## About
-This is a pathology lab website designed to manage lab services, test bookings, and patient reports efficiently.
+In the project directory, you can run:
 
-## Features
-- Online test booking system
-- Patient report tracking
-- Admin dashboard for lab management
-- Responsive design for all devices
+### `npm start`
 
-## Technologies Used
-- Frontend: HTML, CSS, JavaScript
-- Backend: Node.js, Express.js
-- Database: MongoDB
-- Framework: React (if applicable)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Setup
-Instructions on how to set up the project locally:
-1. Clone the repository:
-  git clone https://github.com/kalyanishaw88/pathology-lab-website.git
-2. Navigate to the Project Directory:
-   cd pathology-lab-website
-3.Install backend dependencies:
-  cd backend
-  npm install
-4.Install frontend dependencies:
-  cd ../frontend
-  npm install
-5.Set Up Environment Variables
-  PORT=5000
-  MONGO_URI=mongodb://localhost:27017/pathology-lab
-  JWT_SECRET=your_jwt_secret
-6.Start MongoDB
-  mongod
-7.Run the Backend Server
-  npm run server
-8.Run the Frontend
-  npm start
-9.Access the Application
-  http://localhost:5000
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Usage
-Visit the homepage to browse services.
-Book a test using the online booking form.
-Log in to view test results and reports.
+### `npm test`
 
-## Screenshots
- ### Homepage
- ![Homepage](images/Homepage.png)
- ### Booknowpage
- ![Booknowpage](images/Booknowpage.png)
- ### Booknowpage
- ![YourBooking](images/YourBooking.png)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-##License
-This project is licensed under the ISC License.
+### `npm run build`
 
-# Contributing
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-I appreciate your interest in contributing to this project! Please follow these steps to contribute:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. Fork and clone the repository.
-2. Create a new branch for your feature (`git checkout -b feature-name`).
-3. Make your changes and test them.
-4. Commit your changes with a descriptive message.
-5. Push the changes and create a pull request.
-For detailed guidelines, see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-##Contact
-Email: kalyanishaw88@gmail.com
-GitHub: kalyanishaw88
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-  
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
